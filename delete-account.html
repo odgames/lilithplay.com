@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Delete Your Account - LilithPlay</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background: #0A0A0A;
+      color: #F5F5F5;
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      padding: 40px 20px;
+    }
+    .container {
+      max-width: 600px;
+      width: 100%;
+    }
+    .logo {
+      text-align: center;
+      margin-bottom: 32px;
+    }
+    .logo h1 {
+      font-size: 28px;
+      font-weight: 900;
+      background: linear-gradient(135deg, #E5163F, #FF4D6D);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      letter-spacing: 1px;
+    }
+    h2 {
+      font-size: 22px;
+      font-weight: 700;
+      margin-bottom: 16px;
+      color: #F5F5F5;
+    }
+    p {
+      font-size: 15px;
+      line-height: 1.7;
+      color: rgba(245, 245, 245, 0.6);
+      margin-bottom: 16px;
+    }
+    .section {
+      background: #151518;
+      border: 1px solid rgba(245, 245, 245, 0.06);
+      border-radius: 14px;
+      padding: 24px;
+      margin-bottom: 20px;
+    }
+    .section h3 {
+      font-size: 14px;
+      font-weight: 700;
+      letter-spacing: 1.5px;
+      color: #E5163F;
+      margin-bottom: 12px;
+    }
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+    ul li {
+      font-size: 14px;
+      color: rgba(245, 245, 245, 0.55);
+      padding: 6px 0;
+      padding-left: 20px;
+      position: relative;
+    }
+    ul li::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 13px;
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background: #E5163F;
+    }
+    .email-box {
+      display: inline-block;
+      background: rgba(229, 22, 63, 0.1);
+      border: 1px solid rgba(229, 22, 63, 0.3);
+      border-radius: 8px;
+      padding: 10px 20px;
+      margin: 8px 0;
+    }
+    .email-box a {
+      color: #E5163F;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 15px;
+    }
+    .steps {
+      counter-reset: step;
+    }
+    .steps li {
+      padding-left: 32px;
+    }
+    .steps li::before {
+      content: counter(step);
+      counter-increment: step;
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      background: #E5163F;
+      color: white;
+      font-size: 11px;
+      font-weight: 700;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      top: 8px;
+    }
+    .footer {
+      text-align: center;
+      margin-top: 32px;
+      font-size: 12px;
+      color: rgba(245, 245, 245, 0.2);
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="logo">
+      <h1>LilithPlay</h1>
+    </div>
+
+    <h2>Delete Your Account</h2>
+    <p>If you'd like to delete your LilithPlay account and all associated data, please follow the steps below.</p>
+
+    <div class="section">
+      <h3>HOW TO REQUEST DELETION</h3>
+      <p>Send an email to the following address with the subject line <strong>"Delete My Account"</strong>:</p>
+      <div class="email-box">
+        <a href="mailto:odgameinfo@gmail.com?subject=Delete%20My%20Account">odgameinfo@gmail.com</a>
+      </div>
+      <p style="margin-top: 12px;">Please send the request from the same email address associated with your Google Sign-In so we can verify your identity.</p>
+    </div>
+
+    <div class="section">
+      <h3>DATA THAT WILL BE DELETED</h3>
+      <ul>
+        <li>Google account link (email, display name, profile photo)</li>
+        <li>Firebase user record and authentication data</li>
+        <li>Firestore user document (premium status, login history)</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h3>DATA STORED ONLY ON YOUR DEVICE</h3>
+      <ul>
+        <li>Player names and avatars</li>
+        <li>Game preferences (language, music settings)</li>
+        <li>Game scores and progress</li>
+      </ul>
+      <p style="margin-top: 8px; font-size: 13px;">This data is stored locally on your device using SharedPreferences. To remove it, uninstall the app or clear the app data from your device settings.</p>
+    </div>
+
+    <div class="section">
+      <h3>PROCESSING TIME</h3>
+      <p style="margin-bottom: 0;">Account deletion requests are processed within <strong>7 business days</strong>. You will receive a confirmation email once your data has been deleted.</p>
+    </div>
+
+    <div class="footer">
+      <p>&copy; 2025 LilithPlay. All rights reserved.</p>
+    </div>
+  </div>
+</body>
+</html>
