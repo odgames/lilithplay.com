@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+Disallow: /sweetchat/
+
+User-agent: Googlebot
+Disallow: /sweetchat/
